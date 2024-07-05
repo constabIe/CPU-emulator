@@ -34,7 +34,7 @@ make code fibonacci.lng
 make run fibonacci.bcode
 ```
 ## Test
-Tests execution via [googletest](https://github.com/google/googletest) needs library linking, thus set paths of the location of these librarys on your machine(default Mac OS)
+Tests execution via [googletest](https://github.com/google/googletest) needs library linking, thus set paths of the location of these librarys on your machine(default Mac OS).
 ``` sh
-make test TEST_SYSTEM_INCLUDE=-I /opt/homebrew/opt/googletest/include TEST_SYSTEM_LIB=-L /opt/homebrew/opt/googletest/lib
+make test TEST_SYSTEM_INCLUDE="-I /opt/homebrew/opt/googletest/include" TEST_SYSTEM_LIB="-L /opt/homebrew/opt/googletest/lib"
 ```
