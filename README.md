@@ -1,7 +1,7 @@
 # Простенький Эмулятор CPU
 
 ## Requirements
-* [googletest] ([https://pages.github.com/](https://github.com/google/googletest)) test system
+* [googletest](https://github.com/google/googletest)) test system
 * Linux or Mac OS
 
 ## Installation
@@ -19,3 +19,6 @@
   git init
   git clone https://github.com/constabIe/CPU-emulator
 ```
+## Execution
+* ### The stage of converting a program into bytecode
+
