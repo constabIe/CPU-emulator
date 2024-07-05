@@ -6,11 +6,11 @@
 
 ## Installation
 * googletest test system:
-  Linux:
+  * Linux:
   ``` sh
   sudo apt-get googletest
   ```
-  Mac OS:
+  * Mac OS:
   ```sh
     brew install googletest
   ```
