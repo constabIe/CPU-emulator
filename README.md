@@ -25,7 +25,7 @@ Example:
 - recursive_factorial
 
 Choose the program above for the execution. For example fibonacci.
-### The stage of converting a program into bytecode
+### Stage of converting a program into bytecode
 ```sh
 make code fibonacci.lng
 ```
