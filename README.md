@@ -1,7 +1,7 @@
 # Simple CPU emulator
 
 ## Requirements
-* [googletest](https://github.com/google/googletest)) test system
+* [googletest](https://github.com/google/googletest)
 * Linux or Mac OS
 
 ## Installation
@@ -31,6 +31,6 @@ make code fibonacci.lng
 ```
 ### Stage of execution
 ```sh
-make run fibonacci.lng
+make run fibonacci.bcode
 ```
 
