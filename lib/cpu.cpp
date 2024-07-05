@@ -1,7 +1,7 @@
-#include "../include/command.hpp"
-#include "../include/cpu.hpp"
-#include "../include/stack.hpp"
-#include "../include/utils.hpp"
+#include "command.hpp"
+#include "cpu.hpp"
+#include "stack.hpp"
+#include "utils.hpp"
 
 CPU::CPU(const std::string& filename) :
         begin(0),
