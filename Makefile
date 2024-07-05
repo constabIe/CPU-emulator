@@ -9,6 +9,9 @@ CXXFLAGS = \
 
 LDFLAGS = -flto
 
+TEST_SYSTEM_INCLUDE = -I /opt/homebrew/opt/googletest/include
+TEST_SYSTEM_LIB = -L /opt/homebrew/opt/googletest/lib
+
 BRED    = \033[1;31m
 BGREEN  = \033[1;32m
 BYELLOW = \033[1;33m
@@ -84,8 +87,8 @@ else ifeq (run, $(firstword $(MAKECMDGOALS)))
   $(eval $(RUN_ARGS):;@:)
 else ifeq (test, $(firstword $(MAKECMDGOALS)))
   CXXFLAGS += -pthread
-  CPPFLAGS += -I /opt/homebrew/opt/googletest/include
-  LDFLAGS += -L /opt/homebrew/opt/googletest/lib -lgtest -lgtest_main -pthread
+  CPPFLAGS += $(TEST_SYSTEM_INCLUDE)
+  LDFLAGS += $(TEST_SYSTEM_LIB) -lgtest -lgtest_main -pthread
 endif
 
 test: $(TEST_EXE)
