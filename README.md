@@ -24,6 +24,7 @@ Example programs:
 - fibonacci
 - factorial
 - recursive_factorial
+
 Choose the program above for the execution. For example fibonacci.
 ### The stage of converting a program into bytecode
 ```sh
