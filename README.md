@@ -1,10 +1,8 @@
-# Simple CPU emulator
-
-## Requirements
+# Requirements
 * [googletest](https://github.com/google/googletest)
 * Linux or Mac OS
 
-## Installation
+# Installation
 * Test system:
   - Linux:
   ``` sh
@@ -19,8 +17,9 @@
  git init
  git clone https://github.com/constabIe/CPU-emulator
 ```
-## Usage
-Example programs:
+# Usage
+## Programs
+Example:
 - fibonacci
 - factorial
 - recursive_factorial
@@ -34,4 +33,8 @@ make code fibonacci.lng
 ```sh
 make run fibonacci.bcode
 ```
-
+## Test
+Tests execution via [googletest](https://github.com/google/googletest) needs library linking, thus set paths of the location of these librarys on your machine(default Mac OS)
+``` sh
+make test TEST_SYSTEM_INCLUDE=-I /opt/homebrew/opt/googletest/include TEST_SYSTEM_LIB=-L /opt/homebrew/opt/googletest/lib
+```
