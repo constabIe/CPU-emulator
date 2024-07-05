@@ -1,7 +1,7 @@
-#include "../include/parser.hpp"
-#include "../include/command.hpp"
-#include "../include/cpu.hpp"
-#include "../include/utils.hpp"
+#include "parser.hpp"
+#include "command.hpp"
+#include "cpu.hpp"
+#include "utils.hpp"
 
 const std::map<std::string, int> str_to_reg {
         {"AX", 0},
