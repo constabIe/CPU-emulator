@@ -1,24 +1,36 @@
-# Простенький Эмулятор CPU
+# Simple CPU emulator
 
 ## Requirements
 * [googletest](https://github.com/google/googletest)) test system
 * Linux or Mac OS
 
 ## Installation
-* googletest test system:
-  * Linux:
+* Test system:
+  - Linux:
   ``` sh
   sudo apt-get googletest
   ```
-  * Mac OS:
+  - Mac OS:
   ```sh
-    brew install googletest
+  brew install googletest
   ```
-* clone the repository
+* Clone the repository
 ```sh
-  git init
-  git clone https://github.com/constabIe/CPU-emulator
+ git init
+ git clone https://github.com/constabIe/CPU-emulator
 ```
-## Execution
-* ### The stage of converting a program into bytecode
+## Usage
+Example programs:
+- fibonacci
+- factorial
+- recursive_factorial
+Choose the program above for the execution. For example fibonacci.
+### The stage of converting a program into bytecode
+```sh
+make code fibonacci.lng
+```
+### Stage of execution
+```sh
+make run fibonacci.lng
+```
 
