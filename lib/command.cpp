@@ -96,20 +96,11 @@ void RETCommand::execute(CPU& cpu) {
     cpu.call_stack.pop();
     cpu.pc_register += 1;
 }
-
-////////////////////////////
-// COMMAND TYPES: INT ARG //
-////////////////////////////
-
 ANY_ARG_COMMAND(PUSH)
 void PUSHCommand::execute(CPU& cpu) {
     cpu.stack.push(argument);
     cpu.pc_register += 1;
 }
-
-/////////////////////////////////
-// COMMAND TYPES: REGISTER ARG //
-/////////////////////////////////
 
 ANY_ARG_COMMAND(PUSHR)
 void PUSHRCommand::execute(CPU& cpu) {
@@ -126,10 +117,6 @@ void POPRCommand::execute(CPU& cpu) {
     cpu.stack.pop();
     cpu.pc_register += 1;
 }
-
-//////////////////////////////
-// COMMAND TYPES: LABEL ARG //
-//////////////////////////////
 
 ANY_ARG_COMMAND(JMP)
 void JMPCommand::execute(CPU& cpu) {
@@ -237,15 +224,15 @@ const std::map<int, std::function<Command*(int)>> command_id_to_function {
         {17, GET_COMMAND_FUNC(IN)},
         {18, GET_COMMAND_FUNC(RET)},
         {19, GET_COMMAND_FUNC(END)},
-        {20, GET_COMMAND_FUNC(CALL) },
-        {21, GET_COMMAND_FUNC(JMP) },
-        {22, GET_COMMAND_FUNC(JEQ) },
-        {23, GET_COMMAND_FUNC(JNE) },
-        {24, GET_COMMAND_FUNC(JA) },
-        {25, GET_COMMAND_FUNC(JAE) },
-        {26, GET_COMMAND_FUNC(JB) },
-        {27, GET_COMMAND_FUNC(JBE) },
-        {30, GET_COMMAND_FUNC(PUSH) },
+        {20, GET_COMMAND_FUNC(CALL)},
+        {21, GET_COMMAND_FUNC(JMP)},
+        {22, GET_COMMAND_FUNC(JEQ)},
+        {23, GET_COMMAND_FUNC(JNE)},
+        {24, GET_COMMAND_FUNC(JA)},
+        {25, GET_COMMAND_FUNC(JAE)},
+        {26, GET_COMMAND_FUNC(JB)},
+        {27, GET_COMMAND_FUNC(JBE)},
+        {30, GET_COMMAND_FUNC(PUSH)},
         {40, GET_COMMAND_FUNC(POPR)},
         {41, GET_COMMAND_FUNC(PUSHR)}
 };
